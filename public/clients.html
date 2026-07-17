@@ -47,8 +47,7 @@
                     <label for="phoneClient" class="block text-sm font-medium text-zinc-700 mb-1.5">WhatsApp / Celular</label>
                     <input type="tel" id="phoneClient" name="phoneClient" required placeholder="Ex: (11) 99999-9999"class="w-full rounded-xl border border-zinc-200 bg-white px-4 py-3 text-sm text-zinc-900 placeholder-zinc-400 focus:border-indigo-200 focus:outline-none focus:ring-2 focus:ring-purple-100 transition duration-200"/>
                 </div>
-                <p id="statusClient"></p>
-                <button id="" type="submit" class="w-full rounded-xl bg-indigo-600 py-3 text-sm font-semibold text-white hover:bg-indigo-800 active:scale-[0.98] transition duration-200 shadow-sm shadow-purple-200 mt-2">Cadastrar Cliente</button>
+                <button id="" type="submit" class="w-full rounded-xl bg-indigo-600 py-3 text-sm font-semibold text-white hover:bg-indigo-800 active:scale-[0.98] transition duration-200 shadow-sm shadow-purple-200 mt-2 cursor-pointer">Cadastrar Cliente</button>
             </form>
         </div>
         <div class="mx-auto max-w-5xl">
@@ -77,6 +76,8 @@
 
         </div>
     </main>
+    <div id="edit-container"></div>
+    <div id="toast-container" class="fixed top-24 right-5 z-50 flex flex-col gap-3"></div>
 
     <script src="js/clients.js"></script>
     <script src="js/toolsIndex.js"></script>

@@ -32,3 +32,4 @@ buttonSeeLess.addEventListener('click', () => {
     buttonSeeMore.classList.remove('hidden')
     buttonSeeLess.classList.add('hidden')
 })
+
