@@ -5,11 +5,11 @@ const path = require('path');
 const publicPath = path.join(__dirname, '../../public');
 
 router.get('/', (req, res) => {
-        res.sendFile(path.join(publicPath, 'index.html'))
+        res.render('index')
     });
 
 router.get('/clients', (req, res) => {
-        res.sendFile(path.join(publicPath, 'clients.html'))
+        res.render('clients')
     });
 
 module.exports = router;

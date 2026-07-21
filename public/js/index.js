@@ -1,3 +1,5 @@
+// NUMBER CLIENTS
+
 document.addEventListener('DOMContentLoaded', async () => {
     const counterElement = document.getElementById('counterClients');
 
@@ -12,3 +14,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         counterElement.textContent = "0";
     }
 });
+
+// BUTTON SEE MORE
+
+const contentSeeMore = document.getElementById('contentSeeMore')
+const buttonSeeMore = document.getElementById('buttonSeeMore')
+const buttonSeeLess = document.getElementById('buttonSeeLess')
+
+buttonSeeMore.addEventListener('click', () => {
+    contentSeeMore.classList.remove('hidden')
+    buttonSeeMore.classList.add('hidden')
+    buttonSeeLess.classList.remove('hidden')
+})
+
+buttonSeeLess.addEventListener('click', () => {
+    contentSeeMore.classList.add('hidden')
+    buttonSeeMore.classList.remove('hidden')
+    buttonSeeLess.classList.add('hidden')
+})

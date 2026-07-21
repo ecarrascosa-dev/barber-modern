@@ -15,21 +15,3 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// BUTTON SEE MORE
-
-const contentSeeMore = document.getElementById('contentSeeMore')
-const buttonSeeMore = document.getElementById('buttonSeeMore')
-const buttonSeeLess = document.getElementById('buttonSeeLess')
-
-buttonSeeMore.addEventListener('click', () => {
-    contentSeeMore.classList.remove('hidden')
-    buttonSeeMore.classList.add('hidden')
-    buttonSeeLess.classList.remove('hidden')
-})
-
-buttonSeeLess.addEventListener('click', () => {
-    contentSeeMore.classList.add('hidden')
-    buttonSeeMore.classList.remove('hidden')
-    buttonSeeLess.classList.add('hidden')
-})
-
